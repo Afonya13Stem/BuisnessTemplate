@@ -1,0 +1,1089 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	margin: 0
+	padding: 0
+	height: 100%
+	min-height: 100%
+
+
+body
+	font-family: "Open Sans"
+	opacity: 1
+
+section
+	position: relative
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.flex
+	display: flex
+	flex-wrap: wrap
+
+
+
+.contentCentered
+	position: relative
+	max-width: 1140px
+	margin: 0 auto
+
+// firstScreen
+
+.firstScreen
+	min-height: 100vh
+	background: url("../img/greyOverlay.png"), url("../img/background.png") no-repeat center
+	background-size: cover
+	box-sizing: border-box
+
+
+.headerWrapp
+	min-height: inherit
+	width: inherit
+	flex-direction: column
+	justify-content: space-between
+	box-sizing: border-box
+	padding-top: 50px
+
+
+.headerWrapp__topLine
+	justify-content: space-between
+
+
+
+.logo
+	display: block
+	position: relative
+	width: 158px
+	height: 18px
+	margin-left: 50px
+	background: url("../img/Logo.png") no-repeat
+	background-size: contain
+	text-decoration: none
+
+.headerWrapp__nav
+	position: relative
+	margin-right: 40px
+	
+.menu
+	position: relative
+	color: rgba(255,255,255, 0.8)
+	font-size: 20px
+	text-decoration: none
+
+	&:hover
+		color: rgba(255,255,255, 1)
+
+
+.headerWrapp__info
+	text-align: center
+
+.headerWrapp__info-big
+	margin: 40px 0
+	font-family: "Open Sans"
+	font-size: 70px
+	font-weight: 700
+	line-height: 75px
+	text-transform: uppercase
+	color: #fff
+	
+
+.headerWrapp__info-small
+	max-width: 68%
+	margin: 0 auto
+	margin-bottom: 60px
+	font-family: "Open Sans"
+	font-size: 25px
+	font-weight: 400
+	line-height: 40px
+	color: #fff
+	
+
+.headerWrapp__info-orange
+	color: $accent
+
+.btn
+	border-radius: 10px
+	font-family: "Open Sans"
+	text-transform: uppercase
+
+.headerWrapp__btns .headerBtn
+	display: inline-block
+	border: 1px solid rgba(255, 255, 255, 0.2)
+	color: white
+	font-size: 16px
+	font-weight: 600
+	line-height: 40px
+	text-decoration: none
+	min-width: 210px
+	transition: all 0.3s ease
+
+	&:first-of-type
+		margin-right: 25px
+	&:hover
+		background-color: $accent
+	&:active
+		background-color: darken($accent, 10%)
+
+.headerWrapp__scroll
+	text-align: center
+	margin-bottom: 30px
+	margin-top: 25px
+
+.headerWrapp__scrollItem
+	display: inline-block
+	width: 34px
+	height: 34px
+	background: url("../img/scroll.png") no-repeat center
+	background-size: contain
+	opacity: 0.8
+	transition: opacity 0.3 ease
+
+	&:hover
+		opacity: 1
+
+
+
+// about us section
+
+
+
+.aboutUsContent
+	justify-content: space-around
+	padding-top: 100px
+
+.aboutUsElem
+	width: 250px
+	margin-bottom: 100px
+	text-align: center
+	
+
+.aboutUsElem__logo
+	width: 151px
+	height: 151px
+	border-radius: 50%
+	margin: 0 auto 30px auto
+	border: 1px solid rgba(59, 67, 76, 0.3)
+	
+
+.aboutUsElem__logo1
+	background: url("../img/printLogo.png") no-repeat center
+.aboutUsElem__logo2
+	background: url("../img/screenLogo.png") no-repeat center
+.aboutUsElem__logo3
+	background: url("../img/phoneLogo.png") no-repeat center
+.aboutUsElem__logo4
+	background: url("../img/penLogo.png") no-repeat center
+
+
+.aboutUsElem__head
+	font-family: "Open Sans"
+	font-size: 16px
+	font-weight: 600
+	line-height: 40px
+	margin-bottom: 30px
+
+.aboutUsElem__text
+	font-family: "Open Sans"
+	font-size: 14px
+	font-weight: 400
+	line-height: 26px
+	max-width: 67%
+	margin: 0 auto
+	
+
+
+
+// Email subscribe section
+
+
+.emailSubscribe
+	background: url("../img/greyOverlay.png"), url("../img/emailBg.png") no-repeat center fixed
+	background-size: cover
+
+.emailSubscribe__content
+	min-height: 250px
+	justify-content: center
+	align-items: center
+
+.emailSubscribe__input
+	width: 50%
+	height: 50px
+	background-color: #FFF
+	padding-left: 20px
+	margin-right: 2%
+	color: #3b434c
+	font-family: "Open Sans"
+	font-size: 16px
+	font-weight: 300
+	border: 1px solid transparent
+	border-radius: 10px
+	outline: none
+	box-sizing: border-box
+
+
+.btn-subscribe
+	width: 25%
+	height: 50px
+	background-color: $accent
+	color: white
+	font-family: "Open Sans"
+	font-size: 16px
+	font-weight: 600
+	text-decoration: none
+	border: 1px solid transparent
+	outline: none
+	box-sizing: border-box
+	cursor: pointer
+	&:hover
+		background-color: darken($accent, 5%)
+	&:active
+		background-color: darken($accent, 10%)  
+
+
+// Our Work
+
+
+.ourWork
+	padding-top: 100px
+	flex-wrap: wrap
+	flex-direction: column
+	align-items: center
+	box-sizing: border-box
+
+
+.ourWork__head
+	text-align: center
+	text-transform: uppercase
+	font-family: "Open Sans"
+	font-size: 35px
+	font-weight: 600
+	margin-bottom: 20px
+	line-height: 40px
+	color: #3b434c
+
+.ourWork__head-orange
+	color: $accent
+
+.ourWork__text
+	width: 45%
+	margin: 0 auto 100px auto
+	text-align: center
+	font-family: "Open Sans"
+	font-size: 16px
+	font-weight: 400
+	line-height: 30px
+
+.ourWork__works
+	position: relative
+	margin-bottom: 80px
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+	align-items: center
+
+.imageBlock
+	position: relative
+	width: 360px
+	height: 360px
+	border-radius: 10px
+	margin-bottom: 20px
+	overflow: hidden
+
+
+
+.imageBlock_elem
+	position: absolute
+	// background-color: #333
+	width: inherit
+	height: inherit
+	transition: all 0.3s ease
+	border-radius: 10px
+
+.imageBlock_elem1
+	background-image: url(../img/1.png)
+.imageBlock_elem2
+	background-image: url(../img/2.png)
+.imageBlock_elem3
+	background-image: url(../img/3.png)
+.imageBlock_elem4
+	background-image: url(../img/4.png)
+.imageBlock_elem5
+	background-image: url(../img/5.png)
+.imageBlock_elem6
+	background-image: url(../img/6.png)
+
+
+
+
+
+.imageBlock__overlay
+	display: flex
+	position: relative
+	flex-wrap: wrap
+	flex-direction: column
+	justify-content: center
+	width: inherit
+	height: inherit
+	padding: 0px 70px
+	text-align: center
+	color: #fff
+	background: rgba(247,96,14, 0.9)
+	box-sizing: border-box
+	opacity: 0
+	transition: opacity 0.5s ease
+	user-select: none
+	&:hover
+		opacity: 1
+
+
+.imageBlock__overlay-big
+	margin-bottom: 20px
+	text-transform: uppercase
+	color: #fff
+	font-family: "Open Sans"
+	font-size: 25px
+	font-weight: 600
+	line-height: 40px
+
+.imageBlock__overlay-small
+	margin-bottom: 40px
+	font-family: "Open Sans"
+	font-size: 14px
+	font-weight: 400
+	line-height: 26px;
+
+.imageBlock__btn .worksOverlayBtn
+	padding: 10px 30px
+	color: $accent
+	font-family: "Open Sans"
+	font-size: 16px
+	font-weight: 600
+	background-color: #fff
+	border: 1px solid #fff
+	text-decoration: none
+	transition: all 0.6s ease
+	&:hover
+		background-color: darken(#fff, 5%)
+	&:active
+		background-color: darken(#fff, 10%)
+
+
+
+
+
+.ourWork__showMore
+	margin-bottom: 100px
+
+.showMoreBtn
+	min-width: 210px
+	margin: 0 auto
+	padding: 15px 55px
+	color: #3b434c;
+	border: 1px solid rgba(59, 67, 76, 0.2)
+	border-radius: 10px
+	font-family: "Open Sans"
+	font-size: 16px
+	font-weight: 600
+	line-height: 40px
+	text-align: center
+	text-transform: uppercase
+	text-decoration: none
+	transition: all 0.5s ease
+	&:hover
+		color: #fff
+		background-color: darken($accent, 5%)
+	&:active
+		color: #fff
+		background-color: darken($accent, 10%)  
+
+
+
+// slider Comments
+
+
+#comments
+	background: url(../img/greyOverlay.png), url("../img/clientsBg.png") center fixed
+	background-attachment: contain
+	min-height: 500px
+
+.header_slider
+	position: relative
+	min-height: 500px
+
+.rslides
+	position: relative
+	list-style: none
+	overflow: hidden
+	width: 100%
+	padding: 0
+	margin: 0 
+
+
+.rslides li 
+	-webkit-backface-visibility: hidden
+	position: absolute
+	display: none
+	width: 100%
+	min-height: 500px
+	left: 0
+	top: 0
+	box-sizing: border-box
+	text-align: center
+
+	&:first-child 
+		position: relative
+		display: block
+		float: left
+
+
+/*redacted for ie*/
+
+
+.commentsSlider__img
+	display: block
+	width: 120px
+	height: 120px
+	margin: 100px auto 55px auto
+
+.commentsSlider__text
+	max-width: 68%
+	margin: 0 auto
+	font-size: 25px
+	font-family: "Open Sans"
+	font-style: italic
+	line-height: 40px
+	color: #fff
+
+.commentsSlider__author
+	max-width: 40%
+	margin: 0 auto
+	margin-top: 50px
+	color: #fff
+	font-family: "Open Sans"
+	font-size: 14px
+	line-height: 20px
+
+.slide1
+	width: 45%
+	right: 5%
+	top: 10%
+	text-align: left
+
+
+.slide2
+	width: 40%
+	left: 5%
+	top: 10%
+	text-align: left
+
+
+.slide3
+	width: 40%
+	left: 5%
+	top: 10%
+	text-align: left
+
+
+
+
+.centered-btns_nav 
+	z-index: 3
+	position: absolute
+	-webkit-tap-highlight-color: rgba(0,0,0,0)
+	top: 55%
+	left: 0
+	opacity: 0.7
+	text-indent: -9999px
+	overflow: hidden
+	text-decoration: none
+	height: 40px
+	width: 21px
+	
+	&:hover
+		opacity: 1
+
+
+
+.centered-btns_nav.next 
+	left: auto
+	background: transparent url("../img/arrowRight.png") no-repeat center
+	right: 0
+
+.centered-btns_nav.prev
+	background: transparent url("../img/arrowLeft.png") no-repeat center
+
+// Our team
+
+
+
+.ourTeam
+	min-height: 100vh
+	box-sizing: border-box
+	padding: 100px 0 0 0
+	text-align: center
+	flex-direction: column
+	justify-content: space-between
+	align-items: center
+
+.ourTeam__title
+	height: 26px
+	font-family: "Open Sans"
+	font-size: 35px
+	font-weight: 600
+	color: #3b434c
+	margin-bottom: 30px
+	
+.ourTeam__title-orange
+	color: $accent
+
+.for-text
+	color: #3b434c
+	font-family: "Open Sans"
+	font-size: 16px
+	font-weight: 400
+	line-height: 30px
+	max-width: 475px
+	margin: 0 auto 100px auto
+
+
+.ourTeamRow2
+	list-style: none
+	margin: 0
+	padding: 0
+	justify-content: space-around
+	align-items: flex-start
+		
+.ourTeamRow2>li
+	width: 262px
+	margin-bottom: 100px
+
+.ourTeamRow2__photo
+	display: flex
+	width: 100%
+	height: 314px
+	justify-content: center
+	align-items: flex-end
+		
+.ourTeamRow2__photo1
+	background: url(../img/bro1.png) no-repeat center
+	background-size: cover
+	border-radius: 10px
+.ourTeamRow2__photo2
+	background: url(../img/bro2.png) no-repeat center
+	background-size: cover
+.ourTeamRow2__photo3
+	background: url(../img/bro3.png) no-repeat center
+	background-size: cover
+.ourTeamRow2__photo4
+	background: url(../img/bro4.png) no-repeat center
+	background-size: cover
+
+
+.ourTeamRow2__photo>span
+	display: block
+	width: 235px
+	height: 285px
+	border: 1px solid transparent
+	border-radius: 10px
+	// background: no-repeat center
+	// background-size: cover
+	-webkit-filter: grayscale(100%)
+	-moz-filter: grayscale(100%)
+	-o-filter: grayscale(100%)
+	filter: grayscale(100%)
+	transition: all 0.5s ease
+
+			
+
+
+.ourTeamRow2>li
+	&:hover 
+		span
+			-webkit-filter: grayscale(0%)
+			filter: grayscale(0%)
+			width: inherit
+			height: inherit
+			border-width: 1px 0 3px 0
+			border-radius: 10px 10px 0 0 
+			border-bottom: 5px solid #f7600e
+
+
+.ourTeamRow2__name
+	color: #9da1a5
+	font-family: "Open Sans"
+	font-size: 25px
+	font-weight: 600
+	text-transform: uppercase
+	margin: 25px 0
+	transition: all 0.5s ease
+
+
+.ourTeamRow2>li
+	&:hover .ourTeamRow2__name
+		color: #3b434c
+	&:hover .for-text
+		color: #3b434c
+
+.ourTeamRow2>li
+	color: #3b434c
+
+.ourTeamRow2__social
+	margin-bottom: 30px
+
+.ourTeamRow2__social>a
+	display: inline-block
+	width: 24px
+	height: 24px
+	border: 1px solid transparent
+	border-radius: 50%
+	margin-right: 15px
+	text-decoration: none
+	background: url(../img/Social-Media_Icons.png) no-repeat
+	opacity: 0.5
+	transition: all 0.5s ease
+
+.ourTeamRow2__social>a
+	&:last-of-type
+		margin-right: 0
+		
+
+.ourTeamRow2__social>a
+	&:nth-of-type(1)
+		background-position: 0 0
+	&:nth-of-type(2)
+		background-position: center 0
+	&:nth-of-type(3)
+		background-position: right 0	
+
+						
+.ourTeamRow2>li
+	&:hover .ourTeamRow2__social a
+		background-image: url(../img/Social-Media-Icons-2.png)
+		opacity: 1
+
+.ourTeamRow2 .for-text
+	color: #9da1a5
+	font-family: "Open Sans"
+	font-size: 14px
+	font-weight: 400
+	line-height: 26px
+	transition: all 0.5s ease
+	padding: 0 10px
+	margin: 0
+
+
+
+
+#contacts
+	position: relative
+	background: url(../img/greyOverlay.png), url(../img/contactsBg.jpg) no-repeat center fixed
+	background-size: cover
+
+.contacts
+	min-height: 100vh
+	padding: 100px 0 100px 0
+	box-sizing: border-box
+	justify-content: center
+	align-content: space-between
+	text-align: center
+
+.contacts__header
+	color: #fff
+	font-family: "Open Sans"
+	font-size: 35px
+	font-weight: 600
+	line-height: 40px
+
+.contacts__text
+	margin: 30px 0 100px 0
+	color: #fff
+	font-family: "Open Sans"
+	font-size: 16px
+	font-weight: 400
+	line-height: 30px
+
+.contacts__header-orange
+	color: $accent
+
+.contacts__row2
+	max-width: 73%
+	margin: 0 auto
+
+.contacts__form
+	justify-content: space-between
+
+.contacts__email
+	height: 50px
+	width: 45%
+	padding: 15px
+	border: 1px solid transparent
+	border-radius: 10px
+	background-color: #FFF
+	box-sizing: border-box
+	color: #3b434c
+	font-family: "Open Sans"
+	font-size: 16px
+	font-weight: 400
+	outline: none	
+
+.contacts__subject
+	height: 50px
+	width: 45%
+	padding: 15px
+	border: 1px solid transparent
+	border-radius: 10px
+	background-color: #FFF
+	box-sizing: border-box
+	color: #3b434c
+	font-family: "Open Sans"
+	font-size: 16px
+	font-weight: 400
+	outline: none	
+
+.contacts__textarea
+	width: 100%
+	height: 200px
+	margin: 30px 0 30px 0
+	border-radius: 10px
+	padding: 15px
+	box-sizing: border-box
+	border: 1px solid transparent
+	background-color: #FFF
+	color: #3b434c
+	font-family: "Open Sans"
+	font-size: 16px
+	font-weight: 400
+	outline: none
+
+.contacts__subm
+	width: 210px
+	height: 50px
+	background-color: $accent
+	border: 1px solid transparent
+	border-radius: 10px
+	color: white
+	font-family: "Open Sans"
+	font-size: 16px
+	font-weight: 600
+	cursor: pointer
+	transition: all 0.3s ease
+	outline: none
+	&:hover
+		background-color: darken($accent, 5%)
+	&:active
+		background-color: darken($accent, 10%)  
+
+.socialIcon
+	display: inline-block
+	width: 43px
+	height: 43px
+	background: url(../img/Social-Media-Icons-3.png) no-repeat
+	opacity: 0.8
+	transition: opacity 0.3s ease
+	margin-right: 20px
+
+	&:hover
+		opacity: 1
+
+.contacts__social-fbook
+	background-position: 0 0
+
+.contacts__social-tweet
+	background-position: 25% 0
+
+.contacts__social-google
+	background-position: center 0
+
+.contacts__social-dribble
+	background-position: 75% 0
+
+.contacts__social-behance
+	background-position: right 0
+
+
+.footer
+	position: relative
+	background: #3b434c
+
+.footerContent
+	min-height: 100px
+	justify-content: space-between
+	align-items: center
+	color: white
+	font-family: "Open Sans"
+	font-size: 16px
+	font-weight: 400
+	line-height: 40px		
+
+
+// hamburger menu
+
+.flex-center
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+
+*
+  box-sizing: border-box
+  font-family: 'Open Sans', sans-serif
+  font-weight: 300
+
+a
+  color: inherit
+  text-decoration: none
+  &:visited, &:hover, &:active
+    color: inherit
+    text-decoration: none
+
+h1
+  font-family: 'Pacifico', cursive
+  font-weight: 400
+  font-size: 3em
+  text-align: center
+
+.outer-menu
+  z-index: 1
+  .checkbox-toggle
+    position: relative
+    z-index: 2
+    cursor: pointer
+    width: 30px
+    height: 30px
+    opacity: 0
+
+    &:checked
+      position: fixed
+      top: 45px 
+      + .hamburger > div       
+        -webkit-transform: rotate(135deg)
+        transform: rotate(135deg)
+        &:before
+          top: 0
+          -webkit-transform: rotate(90deg)
+          transform: rotate(90deg)
+        &:after
+          top: 0
+          -webkit-transform: rotate(90deg)
+          transform: rotate(90deg)
+          opacity: 0
+      ~ .menu
+        pointer-events: auto
+        visibility: visible
+        > div
+          -webkit-transform: scale(1)
+          transform: scale(1)
+          -webkit-transition-duration: .75s
+          transition-duration: .75s
+          > div
+            opacity: 1
+            -webkit-transition: opacity 0.4s ease 0.4s
+            transition: opacity 0.4s ease 0.4s
+    &:hover + .hamburger
+      // box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1)
+    &:checked:hover + .hamburger > div
+      -webkit-transform: rotate(225deg)
+      transform: rotate(225deg)
+  .hamburger
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 1
+    width: 30px
+    height: 30px
+    padding: 0
+    background: transparent
+    border-radius: 0 0.12em 0.12em 0
+    cursor: pointer
+    -webkit-transition: box-shadow 0.4s ease
+    transition: all 0.4s ease
+    -webkit-backface-visibility: hidden
+    backface-visibility: hidden
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+    > div
+      position: relative
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      width: 100%
+      height: 2px
+      background: #FEFEFE
+      -webkit-transition: all 0.4s ease
+      transition: all 0.4s ease
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+      -webkit-box-align: center
+      -ms-flex-align: center
+      align-items: center
+      -webkit-box-pack: center
+      -ms-flex-pack: center
+      justify-content: center
+      &:before
+        content: ''
+        position: absolute
+        z-index: 1
+        top: -10px
+        left: 0
+        width: 100%
+        height: 2px
+        background: inherit
+        -webkit-transition: all 0.4s ease
+        transition: all 0.4s ease
+      &:after
+        content: ''
+        position: absolute
+        z-index: 1
+        top: -10px
+        left: 0
+        width: 100%
+        height: 2px
+        background: inherit
+        -webkit-transition: all 0.4s ease
+        transition: all 0.4s ease
+        top: 10px
+  .menu
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    pointer-events: none
+    visibility: hidden
+    overflow: hidden
+    -webkit-backface-visibility: hidden
+    backface-visibility: hidden
+    outline: 1px solid transparent
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+    > div
+      width: 200vw
+      height: 200vw
+      color: #FEFEFE
+      background: rgba(73,78,85,0.7)
+      border-radius: 50%
+      -webkit-transition: all 0.4s ease
+      transition: all 0.4s ease
+      -webkit-box-flex: 0
+      -ms-flex: none
+      flex: none
+      -webkit-transform: scale(0)
+      transform: scale(0)
+      -webkit-backface-visibility: hidden
+      backface-visibility: hidden
+      overflow: hidden
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+      -webkit-box-align: center
+      -ms-flex-align: center
+      align-items: center
+      -webkit-box-pack: center
+      -ms-flex-pack: center
+      justify-content: center
+      > div
+        text-align: center
+        max-width: 90vw
+        max-height: 100vh
+        opacity: 0
+        -webkit-transition: opacity 0.4s ease
+        transition: opacity 0.4s ease
+        overflow-y: auto
+        -webkit-box-flex: 0
+        -ms-flex: none
+        flex: none
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        -webkit-box-align: center
+        -ms-flex-align: center
+        align-items: center
+        -webkit-box-pack: center
+        -ms-flex-pack: center
+        justify-content: center
+        > ul
+          list-style: none
+          padding: 0 1em
+          margin: 0
+          display: block
+          max-height: 100vh
+          > li
+            padding: 0
+            margin: 1em
+            font-size: 24px
+            display: block
+            > a
+              position: relative
+              display: inline
+              cursor: pointer
+              -webkit-transition: color 0.4s ease
+              transition: color 0.4s ease
+              &:hover
+                color: $accent
+                &:after
+                  width: 100%
+              &:after
+                content: ''
+                position: absolute
+                z-index: 1
+                bottom: -0.15em
+                left: 0
+                width: 0
+                height: 2px
+                background: #e5e5e5
+                -webkit-transition: width 0.4s ease
+                transition: width 0.4s ease
+
+
+ 
+
+
+@import "media" // Всегда в конце
