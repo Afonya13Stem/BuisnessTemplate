@@ -6,7 +6,7 @@
 <p>Optimized for Google PageSpeed.<p>
 
 
-<p><strong>Technologies :</strong>HTML%, Gulp, Sass,flexbox, Browsersync, Bower (libs path) and Bourbon. The template contains a  file with caching rules <strong>htacsses</strong> for web server.</p>
+<p><strong>Technologies :</strong>HTML5, Gulp, Sass,flexbox, Browsersync, Bower (libs path) and Bourbon. The template contains a  file with caching rules <strong>htacsses</strong> for web server.</p>
 
 
 
